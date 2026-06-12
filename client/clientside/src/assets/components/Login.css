@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #121212;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+}
+
+.glass-card {
+    background: #1e1e1e;
+    border-radius: 24px;
+    border: 1px solid #333;
+    padding: 40px 50px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.login-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-transform: lowercase;
+    color: #adff2f;
+}
+
+.custom-form-group {
+    margin-bottom: 25px;
+}
+
+.custom-label {
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 14px 18px;
+    background: #2c2c2c;
+    border: 1px solid #444;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    outline: none;
+    border-color: #adff2f;
+    background: #333;
+}
+
+.custom-btn {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    background: #adff2f;
+    border: none;
+    border-radius: 12px;
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.custom-btn:hover {
+    background: #9acd32;
+    transform: translateY(-2px);
+}
+
+.login-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #888;
+}
+
+.login-footer a {
+    color: #adff2f;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s;
+}
+
+.login-footer a:hover {
+    border-bottom-color: #adff2f;
+}

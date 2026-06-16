@@ -1,0 +1,151 @@
+.chat-page {
+    min-height: 100vh;
+    background: #121212;
+    color: #ffffff;
+    padding: 24px;
+}
+
+.chat-header {
+    max-width: 900px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.chat-header p {
+    margin: 4px 0 0;
+    color: #b8b8b8;
+}
+
+.chat-back,
+.message-form button,
+.deal-actions button {
+    border: none;
+    border-radius: 4px;
+    background: #adff2f;
+    color: #121212;
+    font-weight: 700;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.deal-status {
+    margin-left: auto;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #d8d8d8;
+    text-transform: capitalize;
+}
+
+.deal-status.deal_made {
+    border-color: #adff2f;
+    color: #adff2f;
+}
+
+.chat-product,
+.message-list,
+.message-form,
+.deal-actions,
+.chat-list {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chat-product {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.message-list {
+    height: 55vh;
+    overflow-y: auto;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.message-row {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.message-row.mine {
+    justify-content: flex-end;
+}
+
+.message-bubble {
+    max-width: 70%;
+    background: #2c2c2c;
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.message-row.mine .message-bubble {
+    background: #adff2f;
+    color: #121212;
+}
+
+.message-bubble small {
+    display: block;
+    margin-top: 6px;
+    opacity: 0.7;
+}
+
+.empty-chat {
+    color: #b8b8b8;
+}
+
+.deal-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.message-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.message-form input {
+    flex: 1;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background: #1e1e1e;
+    color: #ffffff;
+    padding: 12px;
+}
+
+.chat-list {
+    display: grid;
+    gap: 12px;
+}
+
+.chat-list-item {
+    text-align: left;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.chat-list-item span,
+.chat-list-item small {
+    display: block;
+    color: #b8b8b8;
+    margin-top: 4px;
+}

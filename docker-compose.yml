@@ -1,0 +1,38 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: express_project_mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  server:
+    build:
+      context: ./server
+    container_name: express_project_server
+    restart: always
+    ports:
+      - "6500:6500"
+    environment:
+      PORT: 6500
+      MONGO_URI: mongodb://mongo:27017/express_project
+      secret_key: ameen
+    depends_on:
+      - mongo
+    volumes:
+      - ./server/uploads:/app/uploads
+
+  client:
+    build:
+      context: ./client/clientside
+    container_name: express_project_client
+    restart: always
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server
+
+volumes:
+  mongo_data:

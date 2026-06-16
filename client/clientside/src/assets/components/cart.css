@@ -1,0 +1,228 @@
+/* Theme Variables */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f7f8f8;
+    --text-main: #002f34;
+    --text-muted: #406367;
+    --card-bg: #ffffff;
+    --border-color: rgba(0, 47, 52, .2);
+    --nav-border: #ebeeef;
+}
+
+body.dark-mode {
+    --bg-primary: #121212;
+    --bg-secondary: #1f1f1f;
+    --text-main: #e0e0e0;
+    --text-muted: #b0bec5;
+    --card-bg: #1e1e1e;
+    --border-color: #333333;
+    --nav-border: #2c2c2c;
+}
+
+body.night-mode {
+    --bg-primary: #000000;
+    --bg-secondary: #0a0a0a;
+    --text-main: #ffffff;
+    --text-muted: #90a4ae;
+    --card-bg: #000000;
+    --border-color: #222222;
+    --nav-border: #111111;
+}
+
+/* Global Theme Applications */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-container {
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Styling */
+.jlx-navbar {
+    background-color: var(--bg-secondary);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--nav-border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 15px;
+}
+
+.jlx-logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--text-main);
+    cursor: pointer;
+}
+
+.location-search,
+.main-search {
+    display: flex;
+    align-items: center;
+    background: var(--bg-primary);
+    border: 2px solid var(--text-main);
+    border-radius: 4px;
+    padding: 0 10px;
+    height: 48px;
+}
+
+.location-search {
+    width: 200px;
+}
+
+.main-search {
+    flex-grow: 1;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.location-search input,
+.main-search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    margin-left: 8px;
+    background: transparent;
+    color: var(--text-main);
+}
+
+.search-btn {
+    background: var(--text-main);
+    color: white;
+    border: none;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link,
+.logout-link {
+    font-weight: 700;
+    color: var(--text-main);
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    background: none;
+    border: none;
+}
+
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-main);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sell-btn {
+    background: var(--bg-primary);
+    border: 5px solid;
+    border-image: linear-gradient(to right, #ffce32, #3a77ff, #23e5db) 1;
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 4px 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Bar */
+.category-bar {
+    background: var(--bg-primary);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+}
+
+.category-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.cat-item {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-main);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* Cart Layout Aesthetics */
+.cart-container {
+    max-width: 1280px;
+    margin-top: 40px !important;
+}
+
+.cart-container h1 {
+    color: #002f34;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.card {
+    border: 1px solid rgba(0, 47, 52, .2) !important;
+    border-radius: 4px !important;
+}
+
+.card h5 {
+    color: #002f34;
+    font-weight: 700;
+}
+
+.text-success {
+    color: #002f34 !important;
+    /* Prices on OLX style are dark */
+}
+
+.btn-primary {
+    background-color: #002f34 !important;
+    border: none !important;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 12px;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-outline-secondary {
+    border: 2px solid var(--text-main) !important;
+    color: var(--text-main) !important;
+    font-weight: 700;
+    background: transparent !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f2f4f5 !important;
+}

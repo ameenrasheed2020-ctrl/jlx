@@ -1,0 +1,9 @@
+{
+  "name": "jlx",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm ci --prefix server && npm ci --prefix client/clientside && npm run build --prefix client/clientside",
+    "start": "npm start --prefix server"
+  }
+}

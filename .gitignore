@@ -1,5 +1,6 @@
 server/uploads/*
 !server/uploads/profiles/
+server/uploads/profiles/*
 !server/uploads/profiles/.gitkeep
 
 node_modules/

@@ -1,0 +1,16 @@
+server/uploads/*
+!server/uploads/profiles/
+server/uploads/profiles/*
+!server/uploads/profiles/.gitkeep
+
+node_modules/
+client/clientside/node_modules/
+server/node_modules/
+
+dist/
+client/clientside/dist/
+
+.env
+server/.env
+
+*.log
